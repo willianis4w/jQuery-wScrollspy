@@ -18,7 +18,9 @@
 
 		// Create the defaults once
 		var pluginName = "wScrollspy",
-			defaults = {};
+			defaults = {
+				classActive: 'active'
+			};
 
 		// The actual plugin constructor
 		function Plugin ( element, options ) {
@@ -38,7 +40,7 @@
 				this.topMenuHeight = this.topMenu.outerHeight();
 
 				// All list items
-				this.menuItems     = this.topMenu.find( 'a' );
+				this.menuItems     = this.topMenu.find( 'a[href^="#"]' );
 
 				// Anchors corresponding to menu items
 				this.scrollItems   = $( this.menuItems ).map( function() {
@@ -96,8 +98,8 @@
 
 						// Set/remove active class
 						$( self.menuItems )
-							.removeClass( 'active' )
-							.filter( '[href=#' + id + ']' ).addClass( 'active' );
+							.removeClass( self.settings.classActive )
+							.filter( '[href=#' + id + ']' ).addClass( self.settings.classActive );
 					}
 				});
 
