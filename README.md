@@ -7,11 +7,6 @@ jQuery wScrollspy is a plugin that listens to the page's scroll position and cli
 
 Released under The MIT License.
 
-Example:
-===
-
-[http://codepen.io/anon/pen/fHJuA](http://codepen.io/anon/pen/fHJuA)
-
 Source:
 ===
 
