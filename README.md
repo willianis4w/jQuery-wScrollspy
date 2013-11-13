@@ -23,7 +23,6 @@ Insert the necessary elements in your document, after `</body>`, e.g.:
 ```html
 
 <script src="assets/js/jQuery.wScrollspy.min.js"></script>
-
 ```
 
 Remember to include after including the main jQuery library.
@@ -34,7 +33,6 @@ Initialise:
 
 // your links' wrapper
 $( '#main-header' ).wScrollspy();
-
 ```
 
 Then, all your links beginning with `#` are being watched.
@@ -46,5 +44,4 @@ Options:
 ```javascript
 
 classActive: (string) 'active' // class name for your active links
-
 ```
