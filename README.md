@@ -27,7 +27,7 @@ Insert the necessary elements in your document, after `</body>`, e.g.:
 
 ```html
 
-<script src="assets/js/jquery.scrollspy.js"></script>
+<script src="assets/js/jQuery.wScrollspy.min.js"></script>
 
 ```
 
